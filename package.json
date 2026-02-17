@@ -12,15 +12,19 @@
     "check": "biome check --write ."
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
     "better-sqlite3": "^11.5.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "dotenv": "^17.3.1",
     "drizzle-orm": "^0.36.0",
+    "lucide-react": "^0.574.0",
     "next": "^16.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwind-merge": "^2.5.2"
+    "react-hook-form": "^7.71.1",
+    "tailwind-merge": "^2.5.2",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.12",
