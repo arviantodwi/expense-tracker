@@ -3,7 +3,7 @@
  * Pure functions with error handling for expense management
  */
 
-import { eq, desc, asc, and, gte, lte, like } from 'drizzle-orm';
+import { eq, desc, and, gte, lte, like } from 'drizzle-orm';
 import {
 	db,
 	expenses,
@@ -12,13 +12,7 @@ import {
 	type NewExpense,
 	type Account,
 } from '../index';
-
-/**
- * Result type for operations that can fail
- */
-export type Result<T> =
-	| { success: true; data: T }
-	| { success: false; error: string };
+import type { Result } from '../types';
 
 /**
  * Expense with related account information

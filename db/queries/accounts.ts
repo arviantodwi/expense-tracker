@@ -3,15 +3,9 @@
  * Pure functions with error handling for account management
  */
 
-import { eq, desc, asc } from 'drizzle-orm';
+import { eq, desc } from 'drizzle-orm';
 import { db, accounts, type Account, type NewAccount } from '../index';
-
-/**
- * Result type for operations that can fail
- */
-export type Result<T> =
-	| { success: true; data: T }
-	| { success: false; error: string };
+import type { Result } from '../types';
 
 /**
  * Create a new account
