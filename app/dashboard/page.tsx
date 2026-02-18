@@ -5,6 +5,7 @@
 
 import { ExpenseCard } from '@/components/expense-card';
 import { AccountCard } from '@/components/account-card';
+import { QuickAddExpenseButton } from '@/components/quick-add-expense-modal';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { getAllAccounts, getRecentExpenses, getTotalBalance, getTotalExpenses, getAccountById } from '@/db/queries';
 import Link from 'next/link';
@@ -60,6 +61,9 @@ export default async function DashboardPage() {
 
 	return (
 		<main className="min-h-screen bg-background">
+			{/* Quick Add Expense Button */}
+			<QuickAddExpenseButton accounts={accounts} />
+
 			<div className="container mx-auto px-4 py-8 max-w-7xl">
 				{/* Header */}
 				<header className="mb-8">
